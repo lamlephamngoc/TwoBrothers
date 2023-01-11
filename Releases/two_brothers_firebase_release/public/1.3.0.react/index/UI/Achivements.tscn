@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Enemies/slime.png" type="Texture" id=1]
+[ext_resource path="res://Items/key.png" type="Texture" id=2]
+[ext_resource path="res://Enemies/Bat.png" type="Texture" id=3]
+[ext_resource path="res://UI/Achivements.gd" type="Script" id=4]
+
+[node name="Achivements" type="Control" groups=["Achivement"]]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 4 )
+
+[node name="Bats" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Bats"]
+margin_right = 18.0
+margin_bottom = 16.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 2
+
+[node name="BatLabel" type="Label" parent="Bats"]
+margin_left = 20.0
+margin_top = 1.0
+margin_right = 60.0
+margin_bottom = 15.0
+text = "x 0"
+
+[node name="Slimes" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Slimes"]
+margin_left = -8.0
+margin_top = 7.0
+margin_right = 20.0
+margin_bottom = 36.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+
+[node name="SlimeLabel" type="Label" parent="Slimes"]
+margin_left = 20.0
+margin_top = 19.0
+margin_right = 60.0
+margin_bottom = 33.0
+text = "x 0"
+
+[node name="Keys" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Keys"]
+margin_left = 1.0
+margin_top = 36.0
+margin_right = 15.0
+margin_bottom = 50.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="KeyLabel" type="Label" parent="Keys"]
+margin_left = 20.0
+margin_top = 36.0
+margin_right = 60.0
+margin_bottom = 50.0
+text = "x 0"

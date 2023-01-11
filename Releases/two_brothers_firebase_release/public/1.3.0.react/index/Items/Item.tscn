@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="Item" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Area2D"]
+
+[node name="ShadowSprite" type="Sprite" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
