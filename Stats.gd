@@ -5,6 +5,7 @@ var health = max_health setget set_health
 var keys = 0
 var bats = 0
 var slimes = 0
+var level = 1
 var hasStrongSword = false
 
 signal no_health

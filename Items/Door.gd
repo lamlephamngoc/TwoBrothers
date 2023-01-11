@@ -20,7 +20,8 @@ func _on_Door_body_entered(body):
 		timer.start(1)
 		queue_free()
 		# Load level 2
-		get_tree().change_scene("res://Levels/Level002.tscn")
+		PlayerStats.level += 1
+		get_tree().change_scene("res://Levels/Level" + str(PlayerStats.level) + ".tscn")
 	else:
 		print("Don't have key")
 		var player = get_tree().current_scene.find_node("Player")
